@@ -3,21 +3,13 @@ package 숫자관련_02.피보나치수열;
 import java.util.Scanner;
 
 public class Main {
-    public String[] solution(int n, int[] aArr, int[] bArr){
-        String[] answer = new String[n];
+    public int[] solution(int n){
+        int[] answer = new int[n];
 
-        for(int i=0; i<n; i++){
-           if(aArr[i]==bArr[i]){
-               answer[i] = "D";
-           }else if (aArr[i]==1&&bArr[i]==3){
-               answer[i] = "A";
-           }else if (aArr[i]==2&&bArr[i]==1){
-               answer[i] = "A";
-           }else if (aArr[i]==3&&bArr[i]==2){
-               answer[i] = "A";
-           }else{
-               answer[i] = "B";
-           }
+        answer[0] = 1;
+        answer[1] = 1;
+        for(int i=2; i<n; i++){
+            answer[i] = answer[i-1]+answer[i-2];
         }
 
         return answer;
@@ -28,18 +20,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] aArr = new int[n];
-        for(int i=0; i<n; i++){
-            aArr[i]=sc.nextInt();
-        }
 
-        int[] bArr = new int[n];
-        for(int i=0; i<n; i++){
-            bArr[i]=sc.nextInt();
-        }
-
-        for(String x : main.solution(n,aArr,bArr)){
-            System.out.println(x);
+        for(int x : main.solution(n)){
+            System.out.print(x+" ");
         }
     }
 }
