@@ -1,4 +1,4 @@
-package 숫자관련_02.피보나치수열;
+package 배열관련_02.피보나치수열;
 
 import java.util.Scanner;
 

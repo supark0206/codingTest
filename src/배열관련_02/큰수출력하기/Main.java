@@ -1,4 +1,4 @@
-package 숫자관련_02.큰수출력하기;
+package 배열관련_02.큰수출력하기;
 
 import java.util.Scanner;
 

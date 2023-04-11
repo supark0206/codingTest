@@ -1,4 +1,4 @@
-package 숫자관련_02.뒤집은소수;
+package 배열관련_02.뒤집은소수;
 
 import java.util.Scanner;
 

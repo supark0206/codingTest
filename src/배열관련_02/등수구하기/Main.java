@@ -1,4 +1,4 @@
-package 숫자관련_02.등수구하기;
+package 배열관련_02.등수구하기;
 
 import java.util.ArrayList;
 import java.util.Scanner;

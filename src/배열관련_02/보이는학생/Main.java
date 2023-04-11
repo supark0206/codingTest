@@ -1,4 +1,4 @@
-package 숫자관련_02.보이는학생;
+package 배열관련_02.보이는학생;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package 숫자관련_02.가위바위보;
+package 배열관련_02.가위바위보;
 
 import java.util.Scanner;
 

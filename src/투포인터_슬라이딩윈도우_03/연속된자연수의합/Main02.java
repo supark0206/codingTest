@@ -1,16 +1,18 @@
-package 숫자관련_02.소수;
+package 투포인터_슬라이딩윈도우_03.연속된자연수의합;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main02 {
     public int solution(int n){
         int answer = 0;
-        int[] ch = new int[n+1];
-
-        for(int i=2; i<=n; i++){
-            if(ch[i] == 0){
+        int cnt = 1;
+        n--;
+        while (n>0){
+            cnt++;
+            n = n-cnt;
+            if(n%cnt == 0){
+                System.out.println(n+ " " +cnt);
                 answer++;
-                for(int j=i; j<=n; j=j+i) ch[j]=1;
             }
         }
 
@@ -18,12 +20,11 @@ public class Main {
     }
 
     public static void main(String[] args){
-        Main main = new Main();
+        Main02 main = new Main02();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
 
         System.out.print(main.solution(n));
-
     }
 }

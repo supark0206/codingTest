@@ -1,4 +1,4 @@
-package 숫자관련_02.점수계산;
+package 배열관련_02.점수계산;
 
 import java.util.Scanner;
 
