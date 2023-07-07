@@ -1,4 +1,4 @@
-package DFS_BFS_07.재귀함수;
+package DFS_BFS_07.재귀함수_DFS;
 
 
 public class Main {
