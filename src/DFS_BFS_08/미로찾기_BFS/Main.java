@@ -42,6 +42,7 @@ public class Main {
         if(dis[7][7]==0) System.out.println(-1);
         else System.out.println(dis[7][7]);
 
+
     }
 }
 class Point{

@@ -5,14 +5,15 @@ import java.util.*;
 public class Main {
     public int solution(String str, char chr){
         int answer = 0;
-
-        str = str.toUpperCase();
+        str = str.toUpperCase(Locale.ROOT);
         chr = Character.toUpperCase(chr);
+        char[] tmp = str.toCharArray();
 
-        for(int i =0; i<str.length(); i++){
-            if(str.charAt(i)==chr) answer++;
+        for(char a:tmp){
+            if(a == chr){
+                answer++;
+            }
         }
-
         return answer;
     }
     public static void main(String[] args) {
